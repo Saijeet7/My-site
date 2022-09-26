@@ -1,5 +1,5 @@
 {
-  "name": "saijeet",
+  "name": "start-project",
   "version": "1.0.0",
   "description": "starer project for gulp",
   "main": "index.js",
@@ -13,6 +13,5 @@
     "gulp": "^4.0.2",
     "gulp-sass": "^5.1.0",
     "sass": "^1.54.0"
-  },
-  "dependencies": {}
+  }
 }
