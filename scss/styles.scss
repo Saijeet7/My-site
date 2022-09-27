@@ -327,6 +327,9 @@ body {
     font-size: 2.5rem;
     font-weight: 400;
     color: $secondary;
+    @media #{$phone} {
+        font-size: 2rem;
+    }
 }
 
 .intro__heading {
@@ -337,6 +340,9 @@ body {
     margin-top: 50px;
     margin-bottom: 20px;
     color: $tertiary;
+    @media #{$phone} {
+        font-size: 3.25rem;
+    }
 }
 
 .pro {
@@ -348,6 +354,13 @@ body {
     top: 50px;
     right: 150px;
     width: 200px;
+    @media #{$desktop-small} {
+        right: 0px;
+        width: 150px;
+    }
+    @media #{$phone} {
+        width: 100px;
+    }
 }
 
 .intro__top-sun {
@@ -355,7 +368,13 @@ body {
     top: 30px;
     left: 150px;
     width: 150px;
-    height: 150px;
+    @media #{$desktop-small} {
+        left: 100px;
+    }
+    @media #{$phone} {
+        left: 30px;
+        width: 50px;
+    }
 }
 
 .intro__bottom-cloud {
@@ -363,16 +382,32 @@ body {
     left: 200px;
     bottom: 400px;
     width: 200px;
+    @media #{$desktop-small} {
+        left: 100px;
+        width: 150px;
+    }
+    @media #{$phone} {
+        width: 50px;
+        left: 50px;
+        bottom: 100px;
+    }
 }
 
 .intro__mountain {
     position: relative;
     top: 129px;
+    @media #{$phone} {
+        width: 210px;
+        top: 0;
+    }
 }
 
 .grid-list {
     .container {
         width: 50%;
+        @media #{$phone} {
+            width: 100%;
+        }
         margin: 0 auto;
         .grid-list__row {
             margin: 100px auto;
@@ -381,6 +416,11 @@ body {
             color: $alt;
             font-family: $tertiary-family;
             line-height: 1.5;
+            @media #{$desktop-small} {
+                text-align: center;
+                font-size: 1.4rem;
+                margin: 50px auto;
+            }
             .grid-list__head {
                 color: $tertiary;
                 font-family: $secondary-family;
@@ -396,11 +436,20 @@ body {
                 img {
                     width: 100%;
                 }
+                @media #{$desktop-small} {
+                    float: none;
+                    width: 100%;
+                    margin-right: 0px;
+                }
             }
             .grid-list__img--right {
                 float: right;
                 margin-left: 30px;
                 margin-right: 0;
+                @media #{$desktop-small} {
+                    float: none;
+                    margin-left: 0px;
+                }
             }
         }
     }
@@ -413,6 +462,11 @@ body {
     font-size: 1.8rem;
     line-height: 1.5;
     font-weight: 400;
+    @media #{$phone} {
+        width: 100%;
+        font-size: 1.4rem;
+        margin: 50px auto;
+    }
 }
 
 .profile__img {
@@ -444,6 +498,9 @@ hr {
     width: 2.5%;
     margin: 0 auto;
     margin-bottom: 100px;
+    @media #{$phone} {
+        margin-bottom: 50px;
+    }
 }
 
 .contact {
@@ -454,17 +511,22 @@ hr {
         font-size: 1.8rem;
         font-weight: 400;
         font-family: $tertiary-family;
+        @media #{$desktop-small} {
+            width: 100%;
+        }
     }
 }
 
 .contact__button {
     margin: 50px auto;
+    @media #{$phone} {
+        margin: 25px auto;
+    }
 }
 
 .btn {
     font-size: 1.5rem;
     font-weight: 600;
-    margin: 100px;
     font-family: $secondary-family;
     padding: 10px;
     margin-top: 100px;
@@ -473,6 +535,10 @@ hr {
     border-radius: 5px;
     &:hover {
         background-color: $alt;
+    }
+    @media #{$phone} {
+        padding: 10px;
+        font-size: 1.2rem;
     }
 }
 
@@ -502,5 +568,9 @@ hr {
     font-size: 1.1rem;
     &:hover {
         color: $secondary;
+    }
+    @media #{$phone} {
+        padding: 5px;
+        margin: 5px;
     }
 }
