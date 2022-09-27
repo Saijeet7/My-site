@@ -4,7 +4,12 @@ $ratio: 1.414;
 $container: 1440px;
 $site-width: 1440px;
 // Fonts
-$primary-family: sans-serif;
+$primary-family: 'Great Vibes',
+cursive;
+$secondary-family: 'Merriweather Sans',
+sans-serif;
+$tertiary-family: 'Montserrat',
+sans-serif;
 // Media Queries
 $tablet-width: 1024px;
 $phone-width: 767px;
@@ -20,6 +25,12 @@ $header: 'screen and (max-width: #{$header-width})';
 // Transition
 $transition: all 0.25s ease-in;
 //color
+$primary :#DFF6FF;
+$secondary :#47B5FF;
+$tertiary: #256D85;
+$alt: #06283D;
+$white: #ffffff;
+$black: #000000;
 // Set the box sizing
 *,
 *:after,
@@ -244,7 +255,6 @@ html {
 body {
     font-size: $base-font-size;
     line-height: 1.375;
-    font-family: $primary-family;
     color: #000000;
 }
 
@@ -295,5 +305,202 @@ a {
     }
     &:after {
         clear: both;
+    }
+}
+
+//HTML Starts here
+body {
+    text-align: center;
+    color: $alt;
+}
+
+.intro {
+    background: $primary;
+    .container {
+        position: relative;
+        padding-top: 100px;
+    }
+}
+
+.intro__subHeading {
+    font-family: $tertiary-family;
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: $secondary;
+}
+
+.intro__heading {
+    font-size: 5.625rem;
+    margin: 0 auto;
+    font-family: $primary-family;
+    font-weight: 900;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    color: $tertiary;
+}
+
+.pro {
+    text-decoration: underline;
+}
+
+.intro__top-cloud {
+    position: absolute;
+    top: 50px;
+    right: 150px;
+    width: 200px;
+}
+
+.intro__top-sun {
+    position: absolute;
+    top: 30px;
+    left: 150px;
+    width: 150px;
+    height: 150px;
+}
+
+.intro__bottom-cloud {
+    position: absolute;
+    left: 200px;
+    bottom: 400px;
+    width: 200px;
+}
+
+.intro__mountain {
+    position: relative;
+    top: 129px;
+}
+
+.grid-list {
+    .container {
+        width: 50%;
+        margin: 0 auto;
+        .grid-list__row {
+            margin: 100px auto;
+            text-align: left;
+            font-size: 1.8rem;
+            color: $alt;
+            font-family: $tertiary-family;
+            line-height: 1.5;
+            .grid-list__head {
+                color: $tertiary;
+                font-family: $secondary-family;
+                font-weight: 600;
+                line-height: 1.7;
+                margin-bottom: 20px;
+            }
+            .grid-list__img {
+                margin-bottom: 20px;
+                width: 25%;
+                float: left;
+                margin-right: 30px;
+                img {
+                    width: 100%;
+                }
+            }
+            .grid-list__img--right {
+                float: right;
+                margin-left: 30px;
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+.profile__content {
+    margin: 100px auto;
+    width: 50%;
+    font-family: $tertiary-family;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.profile__img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    margin: 50px auto;
+    overflow: hidden;
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.profile__text,
+.grid-list__title,
+.contact__title {
+    color: $tertiary;
+    font-size: 2.2rem;
+    font-weight: 600;
+    font-family: $secondary-family;
+}
+
+hr {
+    border-color: $alt;
+    border-width: 5px;
+    height: 0px;
+    border-style: dotted none none;
+    width: 2.5%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.contact {
+    .container {
+        margin: 0 auto;
+        width: 50%;
+        color: $tertiary;
+        font-size: 1.8rem;
+        font-weight: 400;
+        font-family: $tertiary-family;
+    }
+}
+
+.contact__button {
+    margin: 50px auto;
+}
+
+.btn {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 100px;
+    font-family: $secondary-family;
+    padding: 10px;
+    margin-top: 100px;
+    background-color: $tertiary;
+    color: $white;
+    border-radius: 5px;
+    &:hover {
+        background-color: $alt;
+    }
+}
+
+.contact__sub-title {
+    font-weight: 600;
+    margin: 30px auto;
+}
+
+.footer {
+    background-color: $alt;
+    padding: 50px;
+    color: $primary;
+    font-size: 1rem;
+    font-family: $secondary-family;
+}
+
+.footer__links {
+    margin-bottom: 30px;
+}
+
+.footer__link {
+    color: $primary;
+    padding: 20px;
+    margin: 20px;
+    font-family: $secondary-family;
+    font-weight: 600;
+    font-size: 1.1rem;
+    &:hover {
+        color: $secondary;
     }
 }
