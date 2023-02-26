@@ -513,6 +513,7 @@ hr {
         font-family: $tertiary-family;
         @media #{$desktop-small} {
             width: 100%;
+            font-size: 1.4rem;
         }
     }
 }
