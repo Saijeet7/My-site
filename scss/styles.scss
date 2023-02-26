@@ -612,6 +612,10 @@ hr {
     justify-content: center;
     align-items: center;
     padding: 100px;
+    flex-wrap: wrap;
+    @media #{$phone} {
+        padding: 50px 0px;
+    }
 }
 
 .icon {
