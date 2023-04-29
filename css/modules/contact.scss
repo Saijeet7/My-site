@@ -1,0 +1,50 @@
+.contact {
+  .container {
+    margin: 0 auto;
+    width: 50%;
+    color: $tertiary;
+    font-size: 1.8rem;
+    font-weight: 400;
+    font-family: $tertiary-family;
+    @media #{$desktop-smaller} {
+      width: 100%;
+      font-size: 1.4rem;
+    }
+  }
+  p {
+    margin-bottom: 40px;
+  }
+}
+
+.contact__button {
+  margin: 50px auto;
+  @media #{$phone} {
+    margin: 0px auto;
+    .btn {
+      display: none;
+    }
+  }
+}
+
+.btn {
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: $secondary-family;
+  padding: 10px;
+  margin-top: 100px;
+  background-color: $tertiary;
+  color: $white;
+  border-radius: 5px;
+  &:hover {
+    background-color: $alt;
+  }
+  @media #{$phone} {
+    padding: 10px;
+    font-size: 1.2rem;
+  }
+}
+
+.contact__sub-title {
+  font-weight: 600;
+  margin: 30px auto;
+}

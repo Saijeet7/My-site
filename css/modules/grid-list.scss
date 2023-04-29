@@ -1,0 +1,55 @@
+
+.grid-list {
+    .container {
+        width: 50%;
+        @media #{$phone} {
+            width: 100%;
+        }
+        margin: 0 auto;
+        .grid-list__row {
+            margin: 100px auto;
+            text-align: left;
+            font-size: 1.8rem;
+            color: $alt;
+            font-family: $tertiary-family;
+            line-height: 1.5;
+            @media #{$desktop-smaller} {
+                text-align: center;
+                font-size: 1.4rem;
+                margin: 50px auto;
+            }
+            .grid-list__head {
+                color: $tertiary;
+                font-family: $secondary-family;
+                font-weight: 600;
+                line-height: 1.7;
+                margin-bottom: 20px;
+            }
+            .grid-list__img {
+                margin-bottom: 20px;
+                width: 25%;
+                float: left;
+                margin-right: 30px;
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+                @media #{$desktop-smaller} {
+                    float: none;
+                    width: 100%;
+                    margin-right: 0px;
+                    margin-bottom: 0;
+                }
+            }
+            .grid-list__img--right {
+                float: right;
+                margin-left: 30px;
+                margin-right: 0;
+                @media #{$desktop-smaller} {
+                    float: none;
+                    margin-left: 0px;
+                }
+            }
+        }
+    }
+}

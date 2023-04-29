@@ -1,0 +1,93 @@
+//HTML Starts here
+body {
+  text-align: center;
+  color: $alt;
+}
+
+.intro {
+  background: $primary;
+  .container {
+    position: relative;
+    padding-top: 100px;
+  }
+}
+
+.intro__subHeading {
+  font-family: $tertiary-family;
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: $secondary;
+  @media #{$phone} {
+    font-size: 2rem;
+  }
+}
+
+.intro__heading {
+  font-size: 5.625rem;
+  margin: 0 auto;
+  font-family: $primary-family;
+  font-weight: 900;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  color: $tertiary;
+  @media #{$phone} {
+    font-size: 3.25rem;
+  }
+}
+
+.pro {
+  text-decoration: underline;
+}
+
+.intro__top-cloud {
+  position: absolute;
+  top: 50px;
+  right: 150px;
+  width: 200px;
+  @media #{$desktop-smaller} {
+    right: 0px;
+    width: 150px;
+  }
+  @media #{$phone} {
+    width: 100px;
+  }
+}
+
+.intro__top-sun {
+  position: absolute;
+  top: 30px;
+  left: 150px;
+  width: 150px;
+  @media #{$desktop-smaller} {
+    left: 100px;
+  }
+  @media #{$phone} {
+    left: 30px;
+    width: 50px;
+  }
+}
+
+.intro__bottom-cloud {
+  position: absolute;
+  left: 200px;
+  bottom: 400px;
+  width: 200px;
+  @media #{$desktop-smaller} {
+    left: 100px;
+    width: 150px;
+  }
+  @media #{$phone} {
+    width: 50px;
+    left: 50px;
+    bottom: 100px;
+  }
+}
+
+.intro__mountain {
+  position: relative;
+  top: 129px;
+  @media #{$phone} {
+    width: 210px;
+    top: 0;
+  }
+}

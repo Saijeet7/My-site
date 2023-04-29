@@ -1,0 +1,28 @@
+
+.footer {
+    background-color: $alt;
+    padding: 50px;
+    color: $primary;
+    font-size: 1rem;
+    font-family: $secondary-family;
+}
+
+.footer__links {
+    margin-bottom: 30px;
+}
+
+.footer__link {
+    color: $primary;
+    padding: 20px;
+    margin: 20px;
+    font-family: $secondary-family;
+    font-weight: 600;
+    font-size: 1.1rem;
+    &:hover {
+        color: $secondary;
+    }
+    @media #{$phone} {
+        padding: 5px;
+        margin: 5px;
+    }
+}

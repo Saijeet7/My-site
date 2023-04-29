@@ -1,0 +1,308 @@
+// Sizes
+$base-font-size: 16px;
+$ratio: 1.414;
+$container: 1440px;
+$site-width: 1440px;
+// Fonts
+$primary-family: 'Great Vibes';
+$secondary-family: 'Merriweather Sans',
+sans-serif;
+$tertiary-family: 'Montserrat',
+sans-serif;
+// Media Queries
+$tablet-width: 1024px;
+$phone-width: 767px;
+$phone-width-small: 400px;
+$header-width: 960px;
+$desktop-small-width: 1250px;
+$desktop: 'screen and (max-width: #{$container})';
+$desktop-smaller: 'screen and (max-width: #{$desktop-small-width})';
+$tablet: 'screen and (max-width: #{$tablet-width})';
+$phone: 'screen and (max-width: #{$phone-width})';
+$phone-small: 'screen and (max-width: #{$phone-width-small})';
+$header: 'screen and (max-width: #{$header-width})';
+// Transition
+$transition: all 0.25s ease-in;
+//color
+$primary :#DFF6FF;
+$secondary :#47B5FF;
+$tertiary: #256D85;
+$alt: #06283D;
+$white: #ffffff;
+$black: #000000;
+// Set the box sizing
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    outline: none;
+    -webkit-overflow-scrolling: touch;
+}
+
+// Overflow hidden on body
+html {
+    overflow-x: hidden;
+}
+
+// Reset everything
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    font-size: 100%;
+    font: inherit;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    vertical-align: baseline
+}
+
+body {
+    line-height: 1
+}
+
+ol,
+ul {
+    list-style: none
+}
+
+blockquote,
+q {
+    quotes: none
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+input,
+button {
+    outline: none;
+    border-radius: 0;
+    border: 0;
+    margin: 0;
+    background: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+// clearfix class   
+.clear {
+    clear: both;
+}
+
+.clear:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.container {
+    max-width: $container;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+}
+
+.wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-size: $base-font-size;
+    line-height: 1.375;
+    color: #000000;
+}
+
+a {
+    text-decoration: none;
+    transition: .3s;
+    &:focus,
+    &:active {
+        outline: none;
+    }
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 0;
+    height: 0;
+    overflow: hidden;
+    .video-js,
+    >iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.accessible-text,
+.screen-reader-text {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    top: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.clearfix {
+    *zoom: 1;
+    &:before,
+    &:after {
+        display: table;
+        content: "";
+        line-height: 0;
+    }
+    &:after {
+        clear: both;
+    }
+}
